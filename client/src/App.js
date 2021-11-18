@@ -1,12 +1,11 @@
-// import './App.css';
 import styled from 'styled-components';
 
 const AppStyles = styled.div`
   div {
-    background-color: var(--light-pink);
-    height: 50vh;
+    /* background-color: var(--light-pink);
+    height: 50vh; */
     h1 {
-      color: var(--gray-1);
+      /* color: var(--gray-1); */
     }
   }
 `;

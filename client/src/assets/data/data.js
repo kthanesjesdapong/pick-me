@@ -1,0 +1,1 @@
+export const prices = ['Please select a value', '1', '2', '3', '4'];

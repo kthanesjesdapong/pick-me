@@ -6,7 +6,8 @@ const queries = require('./query');
 const { searchQuery } = queries;
 
 router.post('/business/search', async (req, res, next) => {
-  const data = await graphQLClient.request(searchQuery, req, body);
+  const data = await graphQLClient.request(searchQuery, req.body);
+  console.log(data)
   res.json(data);
 });
 

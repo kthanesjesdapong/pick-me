@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Form from './components/Form'
 
 const AppStyles = styled.div`
   div {
@@ -13,6 +14,7 @@ const AppStyles = styled.div`
 function App() {
   return (
     <AppStyles>
+      <Form />
       {' '}
       <div>
         <h1 className='hello'>hello</h1>

@@ -5,6 +5,7 @@ import { schema } from '../utilities/schema'
 import { prices } from '../assets/data/data'
 import styled from 'styled-components'
 import RestaurantTitle from './RestaurantTitle';
+import { randomGenerator } from '../utilities/utilities';
 
 
 const FormStyles = styled.div`
@@ -139,7 +140,8 @@ export default function Form() {
   // this is what we're sending when we hit submit
   console.log(results)
 
-  // console.log(results[randomGenerator(results.length)]);
+  const restaurant = results[randomGenerator(results.length)];
+
 
 
   //touched is indicating that a field has been touched aka used
@@ -252,12 +254,12 @@ export default function Form() {
     </div>
     <div className='restaurant__container'>
       <div className='restaurant__wrapper'>
-        <RestaurantTitle
-          name='Restaurant'
-          rating='2'
-          address='address'
-          city='las vegas'
-          state='nevada' />
+        {restaurant && (<RestaurantTitle
+          name={restaurant.name}
+          rating={restaurant.rating}
+          address={restaurant.location.address1}
+          city={restaurant.location.city}
+          state={restaurant.location.state} />)}
 
       </div>
     </div>

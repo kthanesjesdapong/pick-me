@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import HeartIcon from './HeartIcon';
 const RatingStyles = styled.div`
@@ -14,15 +14,16 @@ div {
 
 export default function Rating({ int }) {
     int = Math.floor(int);
-    let icons = [];
-    for (let i = 0; i < int; i++) {
-        icons.push(<HeartIcon></HeartIcon>)
-    }
+    const heart = [];
 
+    for (let i = 0; i < int; i++) {
+        heart.push(<HeartIcon />)
+
+    }
     return (
         <RatingStyles>
             <div>
-                {icons}
+                {heart}
             </div>
         </RatingStyles>
     )

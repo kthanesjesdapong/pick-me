@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import HeartIcon from './HeartIcon';
 import Rating from './Rating';
 
 const RestaurantTitleStyle = styled.div`
@@ -42,7 +41,8 @@ export default function RestaurantTitle(
   return (
     <RestaurantTitleStyle>
       <h2>{name}</h2>
-      <Rating />
+      <Rating
+        int={rating} />
       <h2>
 
         {address},{' '}

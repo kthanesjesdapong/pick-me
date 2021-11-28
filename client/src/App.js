@@ -1,24 +1,19 @@
-import styled from 'styled-components';
 import Form from './components/Form'
+import styled from 'styled-components';
 
 const AppStyles = styled.div`
-  div {
-    /* background-color: var(--light-pink);
-    height: 50vh; */
-    h1 {
-      /* color: var(--gray-1); */
-    }
-  }
-`;
+background-color: var(--deep-pink);
+height: 100vh;
+font-family: 'Roboto';
+/* display: flex;
+justify-content: center;
+align-items: center; */
+`
 
 function App() {
   return (
     <AppStyles>
       <Form />
-      {' '}
-      <div>
-        <h1 className='hello'>hello</h1>
-      </div>
     </AppStyles>
   );
 }

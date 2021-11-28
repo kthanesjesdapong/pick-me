@@ -9,19 +9,24 @@ const GlobalStyles = createGlobalStyle`
   --white : white;
   --black: black;
   --gray-1: #7f7f7f;
+  height: 100%;
+  
 }
-*{
-  padding: 0;
+/* *{
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-}
+
+} */
 html{
-  font-size: 10px;
-  font-family: 'Roboto';
-  background-color: var(--deep-pink);
-  scroll-behavior: smooth;
-}ul,li{
+  /* font-size: 10px;
+  font-family: 'Roboto'; */
+  /* background-color: var(--deep-pink); */
+}
+body {
+  margin: 0;
+}
+ul,li{
   list-style: none;
 }
 a{
@@ -39,21 +44,6 @@ button{
   max-width: 1200px;
   width: 90%;
   margin: 0 auto;
-}
-/* Smooth Scroll  */
-[data-scrollbar] {
-  height: 100vh;
-  overflow: hidden;
-  background-color: var(--gray-1);
-  .scroll-content {
-    background-color: var(--deep-pink);
-  }
-  .scrollbar-track.scrollbar-track-y {
-    background: var(--semi-pink);
-    .scrollbar-thumb-y {
-      background: var(--gray-1);
-    }
-  }
 }
 `;
 

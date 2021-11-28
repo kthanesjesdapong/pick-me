@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import { Formik, Field } from 'formik';
-import { DisplayFormikState } from '../utilities/helper';
 import { searchBusiness } from '../utilities/requests';
 import { schema } from '../utilities/schema'
 import { prices } from '../assets/data/data'
 import styled from 'styled-components'
-import { randomGenerator } from '../utilities/utilities';
 import RestaurantTitle from './RestaurantTitle';
-import M from './Map'
 
 
 const FormStyles = styled.div`
@@ -100,7 +97,18 @@ input {
     justify-content: space-between;
   }
 
+  .restaurant__container {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid black;
+    display:flex;
+    justify-content: center;
+  }
   
+  .restaurant__wrapper{
+   
+  }
 `
 
 
@@ -141,7 +149,6 @@ export default function Form() {
   >
     <div className='container'>
       <div className='form__container'>
-
         <Formik
 
           initialValues={{ term: '', location: '', open_now: false }}
@@ -207,7 +214,6 @@ export default function Form() {
                     </Field>
                   </div>
 
-
                   <div className='open__checkbox'>
                     <label className='open__container'>
                       Open
@@ -239,16 +245,21 @@ export default function Form() {
             );
           }}
         </Formik>
-        <div className='restaurant__container'>
-          <RestaurantTitle
-            name='Restaurant'
-            rating='2' />
-        </div>
+
       </div>
 
-      {/* <M
-      /> */}
 
+    </div>
+    <div className='restaurant__container'>
+      <div className='restaurant__wrapper'>
+        <RestaurantTitle
+          name='Restaurant'
+          rating='2'
+          address='address'
+          city='las vegas'
+          state='nevada' />
+
+      </div>
     </div>
   </FormStyles>)
 }

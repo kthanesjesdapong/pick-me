@@ -1,9 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Rating from 'react-rating'
+import HeartIcon from './HeartIcon';
+import Rating from './Rating';
 
 const RestaurantTitleStyle = styled.div`
-  text-align: left;
+  text-align: center;
   p {
     position: absolute;
     font-family: 'Roboto';
@@ -28,16 +29,26 @@ const RestaurantTitleStyle = styled.div`
 `;
 
 
+
+
 export default function RestaurantTitle(
   { name = 'Name',
     rating = 0,
-    location = 'placeholder' },
+    address = 'someaddress',
+    city = 'somecity',
+    state = 'somestate'
+  },
 ) {
   return (
     <RestaurantTitleStyle>
       <h2>{name}</h2>
-      <Rating initialRating={rating} />
+      <Rating />
+      <h2>
 
+        {address},{' '}
+        {city},{' '}
+        {state}
+      </h2>
     </RestaurantTitleStyle>
   )
 }

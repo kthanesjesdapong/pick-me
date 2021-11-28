@@ -1,12 +1,12 @@
 import React from 'react';
 
 export const DisplayFormikState = (props) => (
-  <div style={{ margin: '1rem 0' }}>
+  <div style={{ margin: '5rem 0' }}>
     <h3 style={{ fontFamily: 'monospace' }} />
     <pre
       style={{
         background: '#f6f8fa',
-        fontSize: '.65rem',
+        fontSize: '2rem',
         padding: '.5rem',
       }}
     >

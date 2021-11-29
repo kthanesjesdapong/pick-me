@@ -6,7 +6,7 @@ Pick Me is an application that randomly selects restaurants per user's specifica
 
 ## Table of Contents
   * [Installation](#installation)
-  * [Tech Stack](#tech stack)
+  * [Tech Stack](#techstack)
 
 
 
@@ -30,7 +30,7 @@ const graphQLCLient = new GraphQLClient(endpoint, {
 })
  ```
  
- ## Tech Stack
+ ## TechStack
  React <br/>
  Express <br/>
  Formik <br/>

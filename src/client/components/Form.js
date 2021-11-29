@@ -102,7 +102,6 @@ input {
     margin: auto;
     width: 50%;
     padding: 10px;
-    border: 2px solid black;
     display:flex;
     justify-content: center;
   }
@@ -138,6 +137,7 @@ export default function Form() {
   // isValid is in our utils folder and we await to see if the schema is valids if it isn't we dont return anything
   //else we set the params and and get the Business
   // this is what we're sending when we hit submit
+  console.log(results)
   console.log(results)
 
   const restaurant = results[randomGenerator(results.length)];
@@ -211,8 +211,11 @@ export default function Form() {
                     </label>
 
                     <Field component='select' id='price' name='price' multiple={false} type='text' >
+
                       {prices.map((value, idx) =>
-                        <option key={idx}>{value}</option>)}
+                        <option key={idx}>{value}</option>)
+                      }
+
                     </Field>
                   </div>
 

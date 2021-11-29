@@ -1,9 +1,24 @@
-# pick-me
+# yelp-graphql-api-server
+## An express proxy server to access Yelp graphql [api](https://www.yelp.com/developers/graphql/guides/intro)
 
-## `Introduction`
+#### Project contents
+1. Graphql queries are in ```src/query.js``` file
+2. Routes are in ```src/routes.js``` file
+3. Graphql client config file ```src/graphql-client.js```
 
-I bootstrapped this react project with create-react-app, for the backend I am using express. To run both my client and my server I am using concurrently to proxy my requests.
+#### Headers included in graphql client config to satisfy Yelp [api](https://www.yelp.com/developers/graphql/guides/intro) requirments.
 
-## `Getting Started`
+```
+const graphQLCLient = new GraphQLClient(endpoint, {
+  headers: {
+    "Access-Control-Allow-Origin": "*",
+    Authorization: `Bearer ${process.env.YELP_API_KEY}`,
+  },
+})
+```
 
-You want to first npm i in the root directory and then run yarn dev and this will start both the server and the client.
+This project uses [graphql-request](https://www.npmjs.com/package/graphql-request) package to perform graphql queries/mutations.
+Currently there are only added queries in the project, but users can add mutations as well.
+
+
+#### If you would like to add new features/configs to this repo please add a PR to ```graphql-api-develop``` branch

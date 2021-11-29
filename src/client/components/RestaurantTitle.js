@@ -6,14 +6,13 @@ const RestaurantTitleStyle = styled.div`
   text-align: center;
   p {
     position: absolute;
-    font-family: 'Roboto';
     font-size: 1rem;
     text-align: center;
     top: 0px;
   }
   h2 {
-    font-family: 'OSBold';
-    font-size: rem;
+
+    font-size: 1rem;
     margin-top: 0.5rem;
   }
   @media only screen and (max-width: 768px) {

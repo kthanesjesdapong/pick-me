@@ -17,7 +17,7 @@ export default function Rating({ int }) {
     const heart = [];
 
     for (let i = 0; i < int; i++) {
-        heart.push(<HeartIcon />)
+        heart.push(<HeartIcon key={i} />)
 
     }
     return (

@@ -12,17 +12,7 @@ const GlobalStyles = createGlobalStyle`
   height: 100%;
   
 }
-/* *{
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
 
-} */
-html{
-  /* font-size: 10px;
-  font-family: 'Roboto'; */
-  /* background-color: var(--deep-pink); */
-}
 body {
   margin: 0;
 }

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const graphQLClient = require('./graphql-client');
+const graphQLClient = require('.//graphql-client');
 const queries = require('./query');
 
 const { searchQuery } = queries;

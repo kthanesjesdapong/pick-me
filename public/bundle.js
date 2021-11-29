@@ -2995,7 +2995,7 @@ input {
     font-size: 1rem;
     padding: 1rem;
     margin-bottom: .5rem;
-    color: var(--light-pink);
+    /* color: var(--light-pink); */
     background-color: var(--semi-pink);
     outline: none;
     border: none;

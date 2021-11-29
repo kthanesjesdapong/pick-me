@@ -35,7 +35,7 @@ input {
     font-size: 1rem;
     padding: 1rem;
     margin-bottom: .5rem;
-    color: var(--light-pink);
+
     background-color: var(--semi-pink);
     outline: none;
     border: none;
@@ -137,8 +137,8 @@ export default function Form() {
   // isValid is in our utils folder and we await to see if the schema is valids if it isn't we dont return anything
   //else we set the params and and get the Business
   // this is what we're sending when we hit submit
-  console.log(results)
-  console.log(results)
+  // console.log(results)
+  // console.log(results)
 
   const restaurant = results[randomGenerator(results.length)];
 

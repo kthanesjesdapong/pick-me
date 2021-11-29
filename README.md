@@ -6,7 +6,7 @@ Pick Me is an application that randomly selects restaurants per user's specifica
 
 ## Table of Contents
   * [Installation](#installation)
-  * [Tech Stack](#techstack)
+  * [Tech Stack](#tech stack)
 
 
 

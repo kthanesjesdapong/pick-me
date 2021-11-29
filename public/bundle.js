@@ -2995,7 +2995,6 @@ input {
     font-size: 1rem;
     padding: 1rem;
     margin-bottom: .5rem;
-    /* color: var(--light-pink); */
     background-color: var(--semi-pink);
     outline: none;
     border: none;
@@ -3095,9 +3094,9 @@ function Form() {
   }; // isValid is in our utils folder and we await to see if the schema is valids if it isn't we dont return anything
   //else we set the params and and get the Business
   // this is what we're sending when we hit submit
+  // console.log(results)
 
 
-  console.log(results);
   console.log(results);
   const restaurant = results[(0,_utilities_utilities__WEBPACK_IMPORTED_MODULE_6__.randomGenerator)(results.length)]; //touched is indicating that a field has been touched aka used
 
@@ -3198,7 +3197,8 @@ function Form() {
     rating: restaurant.rating,
     address: restaurant.location.address1,
     city: restaurant.location.city,
-    state: restaurant.location.state
+    state: restaurant.location.state,
+    img: restaurant.photos[0]
   }))));
 }
 
@@ -3320,6 +3320,13 @@ const RestaurantTitleStyle = styled_components__WEBPACK_IMPORTED_MODULE_2__["def
     font-size: 1rem;
     margin-top: 0.5rem;
   }
+
+  img{
+    width: 300px;
+    height: auto;
+    border: 3px solid var(--semi-pink);
+    border-radius: 3px;
+  }
   @media only screen and (max-width: 768px) {
     text-align: center;
     p {
@@ -3335,11 +3342,17 @@ function RestaurantTitle({
   rating = 0,
   address = 'someaddress',
   city = 'somecity',
-  state = 'somestate'
+  state = 'somestate',
+  img = 'https://www.attendanceworks.org/wp-content/uploads/2020/09/img-placeholder.png'
 }) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(RestaurantTitleStyle, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Rating__WEBPACK_IMPORTED_MODULE_1__["default"], {
     int: rating
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, address, ",", ' ', city, ",", ' ', state));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, address, ",", ' ', city, ",", ' ', state), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "img__container"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: img,
+    alt: img
+  })));
 }
 
 /***/ }),

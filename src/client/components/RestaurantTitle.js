@@ -15,6 +15,13 @@ const RestaurantTitleStyle = styled.div`
     font-size: 1rem;
     margin-top: 0.5rem;
   }
+
+  img{
+    width: 300px;
+    height: auto;
+    border: 3px solid var(--semi-pink);
+    border-radius: 3px;
+  }
   @media only screen and (max-width: 768px) {
     text-align: center;
     p {
@@ -34,7 +41,8 @@ export default function RestaurantTitle(
     rating = 0,
     address = 'someaddress',
     city = 'somecity',
-    state = 'somestate'
+    state = 'somestate',
+    img = 'https://www.attendanceworks.org/wp-content/uploads/2020/09/img-placeholder.png'
   },
 ) {
   return (
@@ -48,6 +56,9 @@ export default function RestaurantTitle(
         {city},{' '}
         {state}
       </h2>
+      <div className='img__container'>
+        <img src={img} alt={img} />
+      </div>
     </RestaurantTitleStyle>
   )
 }

@@ -35,7 +35,6 @@ input {
     font-size: 1rem;
     padding: 1rem;
     margin-bottom: .5rem;
-
     background-color: var(--semi-pink);
     outline: none;
     border: none;
@@ -138,7 +137,7 @@ export default function Form() {
   //else we set the params and and get the Business
   // this is what we're sending when we hit submit
   // console.log(results)
-  // console.log(results)
+  console.log(results)
 
   const restaurant = results[randomGenerator(results.length)];
 
@@ -262,7 +261,8 @@ export default function Form() {
           rating={restaurant.rating}
           address={restaurant.location.address1}
           city={restaurant.location.city}
-          state={restaurant.location.state} />)}
+          state={restaurant.location.state}
+          img={restaurant.photos[0]} />)}
 
       </div>
     </div>

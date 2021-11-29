@@ -11,6 +11,7 @@ query search($term: String!, $location: String!, $price: String!, $open_now: Boo
     name
     rating
     review_count
+    photos
     coordinates {
       latitude
       longitude

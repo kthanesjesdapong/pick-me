@@ -18,7 +18,7 @@ Pick Me is an application that randomly selects restaurants per user's specifica
   1.First clone down the repository and npm install<br/>
   2.Go to (https://www.yelp.com/developers/) and create an API key. <br/>
   3.Once you have the API key go into src/server/api/graphql-client.js and attach your token within the Authorization header. <br/>
-  4.npm run start
+  4.npm run start && the server should be running on http://localhost:8080/
 
   ```
 const graphQLCLient = new GraphQLClient(endpoint, {

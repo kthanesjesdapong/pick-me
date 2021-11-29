@@ -1,6 +1,5 @@
 # Introduction
 
-*Pick Me*
 
 Pick Me is an application that randomly selects restaurants per user's specification. By specifying the term, location, price, and open status of a restaurant and hitting submit we can send queries out to Yelp's GraphQL API. Once we get the data back we render at random from our list of returned restaurants. It takes all the guess work out of deciding what we're going to eat for dinner.
 

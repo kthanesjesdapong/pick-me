@@ -30,11 +30,11 @@ const graphQLCLient = new GraphQLClient(endpoint, {
  ```
  
  ## Tech Stack
- React
- Express
- Formik
- Yup
- GraphQL
+ React <br/>
+ Express <br/>
+ Formik <br/>
+ Yup <br/>
+ GraphQL <br/>
  
 
 

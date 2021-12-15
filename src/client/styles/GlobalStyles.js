@@ -16,6 +16,9 @@ const GlobalStyles = createGlobalStyle`
 body {
   margin: 0;
 }
+
+
+
 ul,li{
   list-style: none;
 }
@@ -29,6 +32,10 @@ img, svg{
 }
 button{
   outline: none
+}
+div {
+  color: var(--deep-pink);
+  background-color: var(--deep-pink);
 }
 .container {
   max-width: 1200px;

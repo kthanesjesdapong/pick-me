@@ -2915,7 +2915,9 @@ __webpack_require__.r(__webpack_exports__);
 
 const AppStyles = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div`
 background-color: var(--deep-pink);
+color: var(--deep-pink);
 height: 100vh;
+width: 100vw;
 `;
 
 function App() {
@@ -2969,7 +2971,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const FormStyles = styled_components__WEBPACK_IMPORTED_MODULE_7__["default"].div`
-
+div {
+  background-color: var(--deep-pink);
+  color: var(--deep-pink);
+}
 .hidden {
   display:none;
 }
@@ -3309,6 +3314,10 @@ __webpack_require__.r(__webpack_exports__);
 
 const RestaurantTitleStyle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div`
   text-align: center;
+  div {
+    background-color: var(--deep-pink);
+    color: var(--deep-pink);
+  }
   p {
     position: absolute;
     font-size: 1rem;
@@ -3386,6 +3395,9 @@ const GlobalStyles = styled_components__WEBPACK_IMPORTED_MODULE_0__.createGlobal
 body {
   margin: 0;
 }
+
+
+
 ul,li{
   list-style: none;
 }
@@ -3399,6 +3411,10 @@ img, svg{
 }
 button{
   outline: none
+}
+div {
+  color: var(--deep-pink);
+  background-color: var(--deep-pink);
 }
 .container {
   max-width: 1200px;

@@ -4,6 +4,10 @@ import Rating from './Rating';
 
 const RestaurantTitleStyle = styled.div`
   text-align: center;
+  div {
+    background-color: var(--deep-pink);
+    color: var(--deep-pink);
+  }
   p {
     position: absolute;
     font-size: 1rem;

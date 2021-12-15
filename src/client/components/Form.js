@@ -9,7 +9,10 @@ import { randomGenerator } from '../utilities/utilities';
 
 
 const FormStyles = styled.div`
-
+div {
+  background-color: var(--deep-pink);
+  color: var(--deep-pink);
+}
 .hidden {
   display:none;
 }

@@ -19,7 +19,7 @@ Pick Me is an application that randomly selects restaurants per user's specifica
   3.Once you have the API key go into src/server/api/graphql-client.js and attach your token within the Authorization header. <br/>
   4.npm run start && the server should be running on http://localhost:8080/ <br/>
   5.Enter in the fields and boom you got your restaurant!<br/>
-  ![alt text](https://github.com/kthanesjesdapong/pick-me/blob/main/public/pick-me-guide.png)
+  ![alt text](https://github.com/kthanesjesdapong/pick-me/blob/main/public/pick_me_guide.png)
   
   ```
 const graphQLCLient = new GraphQLClient(endpoint, {

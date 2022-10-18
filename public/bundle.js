@@ -3314,10 +3314,32 @@ __webpack_require__.r(__webpack_exports__);
 
 const RestaurantTitleStyle = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div`
   text-align: center;
+
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
   div {
     background-color: var(--deep-pink);
     color: var(--deep-pink);
   }
+
+a {
+   cursor: pointer;
+    background-color: var(--light-pink);
+    border: 1px solid var(--light-pink);
+    border-radius: 5px;
+    padding: 3px 5px;
+    margin: 0px 3px;
+    width: 50%;
+}
+
+a:hover {
+  opacity: 50%;
+}
+
   p {
     position: absolute;
     font-size: 1rem;

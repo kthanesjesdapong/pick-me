@@ -1,10 +1,10 @@
-const express = require('express');
-require('cross-fetch/polyfill'); /// fix for graphql-request fetch issue
-const routeHandler = require('./api/route');
-const path = require('path');
-const cors = require('cors');
+const express=require('express');
+require('cross-fetch/polyfill');
+const routeHandler=require('./api/route');
+const path=require('path');
+const cors=require('cors');
 
-const app = express();
+const app=express();
 
 app.use(express.static(path.join(__dirname, '../..', 'public')));
 app.use(express.json());
@@ -16,7 +16,7 @@ app.get('/', (req, res, next) => {
 app.use(cors());
 app.use('/graphql', routeHandler);
 
-const PORT = process.env.PORT || 8080;
+const PORT=process.env.PORT||8080;
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
 
-module.exports = app;
+module.exports=app;
